@@ -1,28 +1,47 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <Navbar />
+    <div class="container">
+      <router-view />
+    </div>
   </div>
 </template>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './shared/Navbar.vue';
+
+ 
+
+
+ 
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Navbar
+},
+  
+
+
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
+  box-sizing: border-box;
 }
+.container { 
+  width: 100vw;
+  height: 100%;
+}
+
 </style>
