@@ -15,9 +15,9 @@ import locale from "element-ui/lib/locale/lang/en";
 // Create an http link:
 const httpLink = new HttpLink({
   // You should use an absolute URL here
-  uri: process.env.URI,
+  uri: 'https://generous-duck-11.hasura.app/v1/graphql',
   headers: {
-    "x-hasura-admin-secret": process.env.HASURA_ADMIN_SECRET,
+    "x-hasura-admin-secret":  'gzwf2szB5OShn1FKbj4qY5nNcYT7ug3AC5zlfCeGeh1CZzyA90hGv61IMv6eZehr'
   },
 });
 
